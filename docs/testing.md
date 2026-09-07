@@ -112,6 +112,7 @@ documente o que ele protege.
 | `test_settings_radio_group.py` | divisores do grupo de rádio em `ui.components` |
 | `test_software_video_decoding.py` | presets, flags Chromium de renderização/strict proxy, persistência e ordem do bootstrap |
 | `test_spellcheck_language_picker.py` | migração, seleção múltipla transacional, pesquisa, limite, recentes, menu e perfis WebEngine |
+| `test_taskbar_badge.py` | contador nativo, zero, preferência, bandeja oculta e compatibilidade com Qt anterior |
 | `test_system_startup_settings_ui.py` | semântica de fechamento, diálogo nativo, seleção do backend gráfico, reinício e acessibilidade |
 | `test_unix_signal_shutdown.py` | ponte POSIX, restauração do estado global e `SIGTERM` real chegando a `aboutToQuit` em subprocesso isolado |
 | `test_update_checker.py` | versões, política de builds, respostas/falhas assíncronas, metadados seguros e popover acessível compartilhado entre sidebar e Sobre |
@@ -161,6 +162,7 @@ documente o que ele protege.
 - `test_software_video_decoding.py`
 - `test_spellcheck_language_picker.py`
 - `test_system_startup_settings_ui.py`
+- `test_taskbar_badge.py`
 - `test_unix_signal_shutdown.py`
 - `test_update_checker.py`
 - `test_whatsapp_app_lock.py`

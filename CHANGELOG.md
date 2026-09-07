@@ -13,6 +13,12 @@ releases and the AppStream metadata.
 
 ## [7.4.5] - In development
 
+### Added
+
+- Show native taskbar/dock unread badges on supported Qt platforms, following
+  the existing unread-counter preference. Added regression coverage and
+  documented the integration and manual validation.
+
 ### Fixed
 
 - Prevented links opened from an internal WhatsApp popup, such as a call

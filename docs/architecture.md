@@ -453,6 +453,12 @@ ou Wayland e dados de inicialização X11. Mudanças nessa área precisam ser
 testadas no backend afetado e, para foco/cursor/compositor, em uma sessão gráfica
 real; `offscreen` não comprova comportamento do compositor.
 
+O `SysTrayManager` também encaminha o contador agregado para
+`QApplication.setBadgeNumber()` quando a API está disponível. A mesma chave
+`system/notificationCounter` controla os contadores da bandeja e da barra de
+tarefas/dock; zero limpa o badge. A visibilidade da bandeja não condiciona o
+badge nativo. Qt decide o suporte da plataforma, sem backend D-Bus adicional.
+
 ## Tema, componentes e internacionalização
 
 `ThemeManager` mantém o tema efetivo, a `QPalette` e observadores. Controles

@@ -269,6 +269,15 @@ rede que possam ser sensíveis.
 - Preserve tokens de ativação Portal/Wayland e o caminho X11.
 - Teste pelo menos o backend alterado e as preferências de privacidade/som.
 
+### Contador nativo de não lidos
+
+- Preserve `system/notificationCounter` e atualize o badge junto ao contador
+  agregado em `SysTrayManager`, inclusive ao atualizar a preferência.
+- Use a API nativa Qt quando disponível; versões anteriores devem continuar
+  atualizando a bandeja normalmente.
+- Valide contagem positiva, zero, preferência desativada e bandeja oculta.
+  Confirme o resultado em uma sessão gráfica; mocks não comprovam o painel.
+
 ### Mudança visual compartilhada
 
 - Corrija primeiro o componente central e audite consumidores.
