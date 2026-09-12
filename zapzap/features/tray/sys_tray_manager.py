@@ -112,6 +112,12 @@ class SysTrayManager:
 
         self._tray.setIcon(TrayIcon.getIcon(icon_type, number_notifications))
 
+        # Qt forwards this to the native taskbar/dock on supported platforms.
+        # Older PyQt6 releases do not expose the badge API.
+        set_badge = getattr(QApplication.instance(), "setBadgeNumber", None)
+        if set_badge is not None:
+            set_badge(number_notifications)
+
     def _open_settings(self, main_window):
         main_window.open_settings()
         main_window.restore_window()
